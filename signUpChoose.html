@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,op sz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: whitesmoke;
+            font-family: "DM Sans", Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            width: 60%;
+            height: 60%;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card {
+            background: whitesmoke;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            width: 50%;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text {
+            padding: 18px;
+            background: white;
+        }
+
+        .text p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        button {
+            font-size: medium;
+            background-color: #0056b1;
+            color: white;
+            border-radius: 7px;
+            margin-top: 7%;
+            padding: 6px;
+            width: 50%;
+        }
+
+        button:hover {
+            background: #007BFF;
+            cursor: pointer;
+        }
+
+        @media (max-width:720px) {
+          .container {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: auto;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        .card {
+            margin-left: 10%;
+            width: 80%;
+            height: auto;
+        }
+
+        .text p {
+            font-size: 12px;
+        }
+
+        button {
+            width: 60%;
+            font-size: 12px;
+            padding: 8px;
+            margin-top: 10px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="./assets/student1.png" alt="Student">
+            </div>
+            <div class="text">
+                <p>By Clicking 'Sign Up As A Student' You Can Able To Apply For Jobs and Skills Requirement In This
+                    Genre Which Is Posted By The Aluminis.</p>
+                <button onclick="student()">Student ➡️</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./assets/alumni.png" alt="Teacher">
+            </div>
+            <div class="text">
+                <p>By Clicking 'Sign Up As A Alumini' You Can Post About Your Skills and Experineces In Companies And
+                    Hire The Required Jobs Officially.</p>
+                <button onclick="alumini()">Alumini ➡️</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function student() {
+            window.location.href = "signUpStu.html";
+        }
+        function alumini() {
+            window.location.href = "signUpAlu.html";
+        }
+    </script>
+</body>
+
+</html>
