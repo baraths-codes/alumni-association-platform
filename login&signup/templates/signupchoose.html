@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Web | Choose</title>
+    <link rel="stylesheet" href="../static/files/signupchoose.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,op sz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="../static/files/assets/student1.png" alt="Student">
+            </div>
+            <div class="text">
+                <p>By Clicking 'Sign Up As A Student' You Can Able To Apply For Jobs and Skills Requirement In This
+                    Genre Which Is Posted By The Aluminis.</p>
+                <button onclick="student()">Student ➡️</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="../static/files/assets/alumni.png" alt="Teacher">
+            </div>
+            <div class="text">
+                <p>By Clicking 'Sign Up As A Alumini' You Can Post About Your Skills and Experineces In Companies And
+                    Hire The Required Jobs Officially.</p>
+                <button onclick="alumini()">Alumini ➡️</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function student() {
+            window.location.href = "signupstudent.html";
+        }
+        function alumini() {
+            window.location.href = "signupalumini.html";
+        }
+    </script>
+</body>
+
+</html>
